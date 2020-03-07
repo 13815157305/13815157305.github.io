@@ -37,11 +37,11 @@ ul,li{
 .title{
 	     height: 100px;
 		 width: 1980px;
-		 background: url("images/title.jpg")  no-repeat;
+		 background: url("./images/title.jpg")  no-repeat;
 }
 .nav{
 	height: 55px;
-	background: url("images/nav_bg.png");
+	background: url("./images/nav_bg.png");
 }
 .nac-con{
 	height: 55px;
@@ -60,7 +60,7 @@ ul,li{
 	line-height: 55px;
 	color: #000;
 	padding: 0px 30px;
-	background: url("images/nav_bg-line.png") no-repeat right;
+	background: url("./images/nav_bg-line.png") no-repeat right;
 }
 .nav-con  li a:hover{
 	color:yellowgreen;
