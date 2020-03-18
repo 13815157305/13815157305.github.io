@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				border: 0px;
+			}
+			li{
+				float:left;
+				padding: 1em;
+				list-style: none;
+			}
+			#images li{
+				
+				margin: 0px 20px 20px 0px;
+				padding: 0px;
+				display: inline;
+			}
+			#images ul li a img{
+				border: 0px;
+			}
+			ul,li{
+				list-style:none;
+				}
+			#box1{
+					margin: 0px 0px 0px 30px;
+				}
+				h1{
+					margin: 0px 0px 0px 30px; 
+				}
+				#box {
+					margin: 0px 0px 0px 30px;
+				}
+				p{
+					margin: 0px 0px 0px 30px;
+				}
+		</style>
+	</head>
+	<body>
+		<h1>猫咪相册</h1>
+		<br>
+		<!-- <a id="box" href="#">注册</a> -->
+		<br>
+		<ul id="images">
+			<li>
+			<a href="images/cat1.jpg" title="猫A">
+			<img src="images/cat1small.jpg" width="100px" alt="猫1">
+			</a>
+			</li>
+			<li>
+			<a href="images/cat2.jpg" title="猫B">
+			<img src="images/cat2small.jpg" alt="猫2" width="100">
+			</a>
+			</li>
+			<li>
+				<a href="images/cat3jpg.jpg" title="猫C">
+			<img src="images/cat3small.jpg" alt="猫3" width="100">
+			</a>
+			</li>
+			<li>
+				<a href="images/cat4.jpg" title="猫D">
+			<img src="images/cat4small.jpg" alt="猫4" width="100">
+			</a>
+			</li>
+		</ul>
+		<br>
+		<div style="clear: both;"></div>
+		<img id="box1" src="images/3cb12be3c0135add9216462c2506e0dd.jpeg" width="450" >
+		<p id="des">选择一个图片</p>
+		<script type="text/javascript">
+			var ul=document.getElementById("images");
+			var aArr=ul.getElementsByTagName("a");
+			// console.log(aArry);
+			var img=document.getElementById("box1");
+			var des=document.getElementById("des");
+			for(var i=0;i<aArr.length;i++){
+				aArr[i].onclick = function(){
+					// console.log(aArr[1]);
+					img.src=this.href;
+					des.innerHTML=this.title;
+					return false;
+				}
+				
+			}
+		</script>
+	</body>
+</html>
